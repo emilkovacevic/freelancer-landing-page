@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- imports -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <main>
+    <div class="logo">
+      <a id="logo" href="./index.html">Elance</a>
+    </div>
+    <div class="facebook">
+      <h1>Log In</h1>
+      <button onclick="logInAlert()"> <i class="fab fa-facebook fa-5x"></i></button>
+    </div>
+    <div class="email">
+      <p>or</p>
+      <form action="" method="post">
+        <input type="email" name="email" placeholder="enter your email" id="email">
+        <br>
+        <input type="password" placeholder="enter your password" name="password" id="password">
+        <br>
+        <input type="submit" onclick="logInAlert()" value="Log In" id="submit">
+      </form>
+    </div>
+    <div class="terms">
+      <p>By registering you confirm that you accept the<span> Terms and Conditions </span>and <span>Privacy Policy</span></p>
+    </div>
+    <div id="footer">
+      <p>Dont have an account? <span><a href="../pages/singup.html">Sing Up</a></span></p>
+      <p><span><a href="../index.html">Go back to home page</a></span></p>
+    </div>
+  </main>
+  <script>
+      function logInAlert(){
+          alert("Log In Via FB Button");
+      }
+      function logIn(){
+          alert("Log In Button");
+      }
+  </script>
+</body>
+</html>

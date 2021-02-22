@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <!-- imports -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/modal.css">
+
+</head>
+<body>
+  <head>
+    <nav id="navbar">
+      <a id="logo" href="./index.html">Elance</a>
+      <div class="left-section">
+        <a class="how-it-works" href="#how-it-works" rel="noopener noreferrer">How It Works</a>
+        <form id="search-box" action="" method="get">
+          <input class="src" type="search" name="search" placeholder="Search Jobs">
+        </form>
+      </div>
+      <div class="right-section">
+        <a href="./pages/login.html" rel="noopener noreferrer">Log In</a>
+        <a href="./pages/singup.html" rel="noopener noreferrer">Sing Up</a>
+        <button  class="featured" id="project-btn">Post a Project</a>
+      </div>
+    </nav>
+  </head>
+      <!-- Start modal -->
+  <section>
+      <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h3>Tell us what you need done</h3>
+                <p>Contact skilled freelancers within minutes. View profiles, ratings, portfolios and chat with them. Pay the freelancer only when you are 100% satisfied with their work.</p>    
+            </div>
+             <div class="project-modal">
+              <form action="">
+                <label for="project-name">Choose a name for your project</label>
+                <input type="text" name="projectName" id="project-name" placeholder="e.g. Build me a website" required>
+                <label for="project-details">Tell us more about your project</label>
+                <input type="text" name="projectDetails" id="project-details" placeholder="Describe your project here..." required>
+                <input type="file" name="file" id="file" required>
+                <input id="submit" type="submit" value="Submit">        
+              </form>
+            </div>
+          </div>
+        </div>
+  </section>
+           <!-- End modal -->
+  <main>
+    <!-- Start Carousel -->
+     <div id="carousel">
+      <div class='slider'>
+        <div class='slide1'>
+          <div class="headline">
+            <p>Hire expert freelancers for any job, online</p>
+            <p>Millions of small businesses use Elancer to turn their ideas into reality.</p>
+            <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Hire</a>
+            <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Work</a>
+          </div>
+        </div>
+        <div class='slide2'>
+          <div class="headline">
+           <p>Hire expert freelancers for any job, online</p>
+           <p>Millions of small businesses use Elancer to turn their ideas into reality.</p>             
+           <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Hire</a>
+           <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Work</a>
+          </div>
+        </div>
+        <div class='slide3'>
+          <div class="headline">
+           <p>Hire expert freelancers for any job, online</p> 
+           <p>Millions of small businesses use Elancer to turn their ideas into reality.</p>              
+           <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Hire</a>
+           <a onclick="justDemo()" href="#" rel="noopener noreferrer">I want to Work</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Carousel -->      
+    <!-- Company Logos -->
+    <section>
+        <h2>As used by</h2>
+      <div id="company-logos">
+        <a class="company-logo" href="https://www.microsoft.com/" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/microsoft-e43ee696.svg" alt="microsoft"></a>
+        <a class="company-logo" href="http://www.sap.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/sap-9d4ebe0e.svg" alt="sap"></a>
+        <a class="company-logo" href="https://www.metlife.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/metlife-adb7e6be.svg" alt="metlife"></a>
+        <a class="company-logo" href="http://www.intel.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/intel-7fe73541.svg" alt="intel"></a>
+        <a class="company-logo" href="http://www.boeing.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/boeing-787917c9.svg" alt="boeing"></a>
+        <a class="company-logo" href="https://www.averydennison.com/" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/avery-dennison-b06dbf8e.svg" alt="averydennison"></a>
+        <a class="company-logo" href="http://www.pwc.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/pwc-bad4f2a5.svg" alt="PricewaterhouseCoopers "></a>
+        <a class="company-logo" href="http://www.ge.com" target="_blank" rel="noopener noreferrer"><img src="./images/company-logos/ge-67030fc9.svg" alt="general eletric"></a>
+      </div>
+    </section>
+    <!-- End Company Logos -->
+    <!-- Start Pich Line-->
+    <section id="how-it-works">
+      <div class="hook">
+          <h2>Need Work Done?</h2>
+          <h1>Use The Leading Freelance Platform</h1>
+      </div>
+      <div id="cards">
+        <div class="card">
+          <img src="./images/post-a-job-eaf3f61f.svg" alt="post image">
+          <h3>Post a job</h3>
+          <p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes.</p>
+        </div>
+        <div class="card">
+          <img src="./images/choose-freelancers-c7d9fb04.svg" alt="freelancers">
+          <h3>Choose freelancers</h3>
+          <p>Whatever your needs, there will be a freelancer to get it done: from web design, mobile app development, virtual assistants, product manufacturing, and graphic design (and a whole lot more).</p>
+        </div>
+        <div class="card">
+          <img src="./images/pay-safely-8f390ac2.svg" alt="payment">
+          <h3>Pay safely</h3>
+          <p>It's easy. Simply post a job you need completed and receive competitive bids from freelancers within minutes.</p>
+        </div>        
+      </div>
+    </section>
+    <!-- End Pich Line-->   
+    <section>
+      <h2>What's great about it?</h2>
+      <div class="perks">
+        <div class="perk-item">
+          <div class="perk-headline">
+              <img src="./images/perk-icons/browse-portfolios-506ce3c6.svg" alt="">
+              <h3>Browse portfolios</h3>
+          </div>
+          <p>Find professionals you can trust by browsing their samples of previous work and reading their profile reviews.</p>
+        </div>
+        <div class="perk-item">
+            <div class="perk-headline">
+              <img src="./images/perk-icons/view-bids-2d9cc1a6.svg" alt="">
+             <h3>View bids</h3>
+            </div>
+          <p>Receive free bids from our talented freelancers within seconds.</p>
+        </div>
+        <div class="perk-item">
+            <div class="perk-headline">
+              <img src="./images/perk-icons/live-chat-3264bb8d.svg" alt="">
+             <h3>Live chat</h3>
+            </div>
+          <p>You can live chat with your freelancers to get constant updates on the progress of your work</p>
+        </div>
+        <div class="perk-item">
+            <div class="perk-headline">
+              <img src="./images/perk-icons/pay-35ceba55.svg" alt="">
+             <h3>Pay for quality</h3>
+            </div>
+          <p>Pay for work when it has been completed and you're 100% satisfied.</p>
+        </div>
+        <div class="perk-item">
+            <div class="perk-headline">
+              <img src="./images/perk-icons/track-progress-9271f923.svg" alt="">
+             <h3>Track progress</h3>
+            </div>
+          <p>Keep up-to-date and on-the-go with our time tracker, and mobile app.</p>
+        </div>
+        <div class="perk-item">
+            <div class="perk-headline">
+              <img src="./images/perk-icons/support-2bb41a7a.svg" alt="">
+             <h3>24/7 support</h3>
+            </div>
+          <p>We're always here to help. Our support consists of real people who are available 24/7.</p>
+        </div>
+      </div>
+    </section> 
+    <!-- Start Crowd Favorites -->
+    <section>
+      <div id="favorites">
+      <h2 class="crowd">Crowd favorites</h2>
+      <h2 class="disp">Here are some of our most popular projects</h2>
+      
+      <div class="projects">
+        <div class="project">
+          <img src="https://source.unsplash.com/600x400/?website" alt="website">
+          <h3>Website Development</h3>
+          <h5>From $100 USD</h5>
+        </div>
+
+          <div class="project">
+            <img src="https://source.unsplash.com/600x400/?art" alt="graphic art">
+            <h4>Graphic Design</h4>
+            <h5>From $50 USD</h5>
+          </div>
+            <div class="project">
+              <img src="https://source.unsplash.com/600x400/?logo" alt="logo design">
+              <h4>Logo Design</h4>
+              <h5>From $50 USD</h5>
+            </div>
+
+              <div class="project">
+                <img src="https://source.unsplash.com/600x400/?marketing" alt="marketing">
+                <h4>Marketing</h4>
+                <h5>From $120 USD</h5>
+              </div>
+                <div class="project">
+                  <img src="https://source.unsplash.com/600x400/?writing" alt="writing">
+                  <h4>Writing</h4>
+                  <h5>From $40 USD</h5>
+                </div>
+                <div class="project">
+                    <img src="https://source.unsplash.com/600x400/?mobilephone" alt="mobile phone">
+                    <h4>Mobile Development</h4>
+                    <h5>From $80 USD</h5>
+                  </div>    
+              </div>
+            </div>
+    </section>
+    <!-- End Crowd Favorites -->
+
+    <section id="apis">
+      <div class="api1">
+          <img src="./images/API-1.png" alt="">
+          <div class="api-data">
+           <a class="api-headline" href=""><p>ELANCER API</p></a>
+           <h3>39 million professionals on demand</h3>
+           <p>Why hire people when you can simply integrate our talented cloud workforce instead?</p>
+           <a href="https://github.com/damaksan/elance"><button>View Documentation</button></a>
+          </div>
+      </div>
+      <div class="api2">
+        <img src="./images/API-2.png" alt="">
+       <div class="api-data">
+        <a class="api-headline" href=""><p>ELANCER ENERPRISE</p></a>
+        <h3>Company on budget? Get more done for less</h3>
+        <p>Use our workforce of 39 million to helo youe business achieve more.</p>
+        <a href="https://damaksan.github.io/"><button>Contact Us</button></a>
+       </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <div class="elancer">
+        <h4>Freelancer</h4>
+        <ul>
+          <li>Categories</li>
+          <li>Projects</li>
+          <li>Enterprise</li>
+          <li>Project Managment</li>
+          <li>Showcase</li>
+        </ul>
+      </div>
+      <div class="about">
+        <h4>About Us</h4>
+        <ul>
+        <li>How It Works</li>
+        <li>Investors</li>
+      </ul>
+      </div>
+      <div class="terms">
+        <ul>
+            <h4>Privacy Policy</h4>
+            <li>Terms and Conditions</li>
+            <li>Copyright Policy</li>
+        </ul>
+      </div>
+      <div class="apps">
+          <ul>
+              <h4>Apps</h4>
+              <ul>
+                <li><a href="http://www.apple.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-apple fa-3x"></i></a></li>
+                <li><a href="http://www.google.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-google-play fa-3x"></i></a></li>
+              </ul>
+          </ul>
+      </div>
+    </div>
+    <div class="me">
+        <p>Copyright 2021</p>
+    <p><a href="https://damaksan.github.io/">(Emil Kovacevic)@github.com</a></p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
