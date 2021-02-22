@@ -20,6 +20,7 @@
 
 body {
   line-height: 1.6;
+  background: #f0f0f0;
 }
 
 a:hover {
@@ -296,7 +297,7 @@ button {
 }
 
 .headline a:hover {
-  background-color: rgba(34, 65, 105, 0.4);
+  background-color: rgba(34, 65, 105, 0.726);
 }
 
 .headline p:nth-child(1) {
@@ -451,6 +452,7 @@ button {
       justify-self: center;
   margin: 1em;
   padding: 1em;
+  border: 1px solid gray;
   -webkit-box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.27);
           box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.27);
   min-width: 100px;
@@ -505,6 +507,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid gray;
   background-color: whitesmoke;
 }
 
