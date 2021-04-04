@@ -24,7 +24,7 @@ body {
 }
 
 a:hover {
-  color: blue;
+  color: #62bb8a;
 }
 
 section {
@@ -375,8 +375,8 @@ button {
 
 #cards img {
   max-width: 200px;
-  -o-object-fit: c;
-     object-fit: c;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .perks {
@@ -385,7 +385,7 @@ button {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2em;
+  grid-gap: 1em;
 }
 
 .perks .perk-item {
@@ -401,9 +401,15 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-bottom: 1px solid gray;
+}
+
+.perks .perk-item .perk-headline img {
+  height: 80px;
 }
 
 .perks .perk-item .perk-headline h3 {
+  padding-left: 1em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -418,6 +424,8 @@ button {
 
 .perks .perk-item {
   border: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  padding: 0 1em;
 }
 
 .perks .perk-item:hover {
